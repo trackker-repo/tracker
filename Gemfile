@@ -8,7 +8,9 @@ gem 'authlogic'
 
 gem 'formtastic', '~> 1.2.0'
 
- gem 'mysql', '2.8.1'
+ gem 'pg'#, '2.8.1'
+
+# gem 'bundler', '1.0.0'
  
 gem "mail", "2.2.19"
 
