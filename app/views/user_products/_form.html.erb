@@ -1,0 +1,28 @@
+<%= form_for(@user_product) do |f| %>
+  <% if @user_product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_product.errors.count, "error") %> prohibited this user_product from being saved:</h2>
+
+      <ul>
+      <% @user_product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<h1>Choose a Product </h1>
+<%= form_tag 'user_products_path' %>
+ <% @trackkr_modules.each do |tmodule| %>
+ 	<h1><%= tmodule.name %></h1>
+		<% tmodule.t_categories.each do |category| %>
+			<h2> <%=category.name %>  </h2>
+					<% category.products.each do |product| %>
+					<%= radio_button_tag "product_ids", product.id %>
+					<%= product.name %>
+					
+					
+				<% end %>
+		<% end %>
+ <% end %>
+ <%= submit_tag "Add to Trackkr" %>
+<% end %>
