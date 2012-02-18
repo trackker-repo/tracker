@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.3'
 
 gem 'authlogic'
 # Bundle edge Rails instead:
@@ -10,7 +10,7 @@ gem 'formtastic', '~> 1.2.0'
 
  gem 'pg'#, '2.8.1'
 
- gem 'bundler', '1.0.10'
+ gem 'bundler', '1.1.rc.7'
  
 gem "mail", "2.2.19"
 
