@@ -10,7 +10,7 @@ gem 'formtastic', '~> 1.2.0'
 
  gem 'pg'#, '2.8.1'
 
-# gem 'bundler', '1.0.0'
+ gem 'bundler', '1.0.10'
  
 gem "mail", "2.2.19"
 

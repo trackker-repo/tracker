@@ -78,6 +78,7 @@ PLATFORMS
 
 DEPENDENCIES
   authlogic
+  bundler (= 1.0.10)
   formtastic (~> 1.2.0)
   mail (= 2.2.19)
   pg
